@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chaos Blog - Where I put my thoughts together</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Chaos Blog - Where I put my thoughts together</description>
+    <title>emacs on Chaos Blog - Where I put my thoughts together</title>
+    <link>http://localhost:1313/tags/emacs/</link>
+    <description>Recent content in emacs on Chaos Blog - Where I put my thoughts together</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 23 Oct 2019 18:42:00 +1100</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Tue, 22 Oct 2019 17:34:00 +1100</pubDate>
-      
-      <guid>http://localhost:1313/about/</guid>
-      <description>About Me 📱 iOS Developer since 2012 🤖, live in Melbourne work at iflix.
-I feel lucky 🍀 my job is also my hobby 💻. I like to break things fast 💔 and fix things faster 🚀.
-After work, I also enjoy video games 🎮 and videography 📷.</description>
-    </item>
     
     <item>
       <title>ox-hugo Install Issue with Spacemacs</title>
