@@ -16,49 +16,63 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/running-oh-my-zsh-inside-spacemacs/</loc>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/emacs/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/org/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/programming/</loc>
-    <lastmod>2019-10-23T19:47:25+11:00</lastmod>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/zsh/</loc>
+    <lastmod>2019-10-26T14:57:02+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/org/</loc>
     <lastmod>2019-10-23T19:47:25+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

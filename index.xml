@@ -6,7 +6,7 @@
     <description>Recent content on Chaos Blog - Where I put my thoughts together</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Oct 2019 18:42:00 +1100</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 10:58:00 +1100</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,17 @@ After work, I also enjoy video games 🎮 and videography 📷.</description>
       
       <guid>http://localhost:1313/post/ox-hugo-install-issue-with-spacemacs/</guid>
       <description>&lt;p&gt;While I try to install &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;ox-hugo&lt;/a&gt; on my &lt;a href=&#34;http://spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt;, I found an issue:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Running Oh-My-Zsh inside Spacemacs</title>
+      <link>http://localhost:1313/post/running-oh-my-zsh-inside-spacemacs/</link>
+      <pubDate>Sat, 26 Oct 2019 10:58:00 +1100</pubDate>
+      
+      <guid>http://localhost:1313/post/running-oh-my-zsh-inside-spacemacs/</guid>
+      <description>&lt;p&gt;When I start using &lt;a href=&#34;http://spacemacs.org/&#34;&gt;Spacemacs&lt;/a&gt;, I was hoping there is a way to using my own configured &lt;a href=&#34;https://ohmyz.sh/&#34;&gt;zsh&lt;/a&gt;
+inside the Spacemacs workflow, after a look through the documentation, of
+course we can do it&lt;/p&gt;</description>
     </item>
     
   </channel>

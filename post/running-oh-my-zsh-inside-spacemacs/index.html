@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>ox-hugo Install Issue with Spacemacs - Chaos Blog - Where I put my thoughts together</title>
+  <title>Running Oh-My-Zsh inside Spacemacs - Chaos Blog - Where I put my thoughts together</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Chao Ruan" /><meta name="description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:
+<meta name="author" content="Chao Ruan" /><meta name="description" content="When I start using Spacemacs, I was hoping there is a way to using my own configured zsh inside the Spacemacs workflow, after a look through the documentation, of course we can do it
 " /><meta name="keywords" content="swift, ios, programming" />
 
 
@@ -27,7 +27,7 @@
 <meta name="generator" content="Hugo 0.58.3 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/ox-hugo-install-issue-with-spacemacs/" />
+<link rel="canonical" href="http://localhost:1313/post/running-oh-my-zsh-inside-spacemacs/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,26 +39,32 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="ox-hugo Install Issue with Spacemacs" />
-<meta property="og:description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:" />
+<meta property="og:title" content="Running Oh-My-Zsh inside Spacemacs" />
+<meta property="og:description" content="When I start using Spacemacs, I was hoping there is a way to using my own configured zsh
+inside the Spacemacs workflow, after a look through the documentation, of
+course we can do it" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/ox-hugo-install-issue-with-spacemacs/" />
-<meta property="article:published_time" content="2019-10-23T18:42:00+11:00" />
-<meta property="article:modified_time" content="2019-10-23T19:47:25+11:00" />
-<meta itemprop="name" content="ox-hugo Install Issue with Spacemacs">
-<meta itemprop="description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:">
+<meta property="og:url" content="http://localhost:1313/post/running-oh-my-zsh-inside-spacemacs/" />
+<meta property="article:published_time" content="2019-10-26T10:58:00+11:00" />
+<meta property="article:modified_time" content="2019-10-26T14:57:02+11:00" />
+<meta itemprop="name" content="Running Oh-My-Zsh inside Spacemacs">
+<meta itemprop="description" content="When I start using Spacemacs, I was hoping there is a way to using my own configured zsh
+inside the Spacemacs workflow, after a look through the documentation, of
+course we can do it">
 
 
-<meta itemprop="datePublished" content="2019-10-23T18:42:00&#43;11:00" />
-<meta itemprop="dateModified" content="2019-10-23T19:47:25&#43;11:00" />
-<meta itemprop="wordCount" content="140">
+<meta itemprop="datePublished" content="2019-10-26T10:58:00&#43;11:00" />
+<meta itemprop="dateModified" content="2019-10-26T14:57:02&#43;11:00" />
+<meta itemprop="wordCount" content="219">
 
 
 
-<meta itemprop="keywords" content="emacs,org," />
+<meta itemprop="keywords" content="emacs,zsh," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ox-hugo Install Issue with Spacemacs"/>
-<meta name="twitter:description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:"/>
+<meta name="twitter:title" content="Running Oh-My-Zsh inside Spacemacs"/>
+<meta name="twitter:description" content="When I start using Spacemacs, I was hoping there is a way to using my own configured zsh
+inside the Spacemacs workflow, after a look through the documentation, of
+course we can do it"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -125,15 +131,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">ox-hugo Install Issue with Spacemacs</h1>
+      <h1 class="post-title">Running Oh-My-Zsh inside Spacemacs</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-10-23 </span>
+        <span class="post-time"> 2019-10-26 </span>
         <div class="post-category">
             <a href="/categories/programming/"> programming </a>
             </div>
-          <span class="more-meta"> 140 words </span>
-          <span class="more-meta"> 1 min read </span>
+          <span class="more-meta"> 219 words </span>
+          <span class="more-meta"> 2 mins read </span>
         
       </div>
     </header>
@@ -141,45 +147,26 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#reference">Reference</a></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      <p>While I try to install <a href="https://ox-hugo.scripter.co/">ox-hugo</a> on my <a href="http://spacemacs.org/">Spacemacs</a>, I found an issue:</p>
+      <p>When I start using <a href="http://spacemacs.org/">Spacemacs</a>, I was hoping there is a way to using my own configured <a href="https://ohmyz.sh/">zsh</a>
+inside the Spacemacs workflow, after a look through the documentation, of
+course we can do it</p>
 
-<p>After reading the install and <a href="https://ox-hugo.scripter.co/#usage">usage guide</a>. I added <code>ox-hugo</code>
-to <code>dotspacemacs-additional-packages</code> and also did this:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">defun</span> <span class="nv">dotspacemacs/user-config</span> <span class="p">()</span>
-  <span class="c1">;; Other stuff</span>
-  <span class="c1">;; ..</span>
+<p>First, we need to let Spacemacs load zsh when it setup <code>shell</code>, and I found
+you can do a pop-up buffer style with 30% of the current height from the
+bottom.</p>
 
-  <span class="c1">;; ox-hugo config</span>
-  <span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
-    <span class="nb">:ensure</span> <span class="no">t</span>          <span class="c1">;Auto-install the package from Melpa (optional)</span>
-    <span class="nb">:after</span> <span class="nv">ox</span><span class="p">))</span></code></pre></td></tr></table>
-</div>
-</div>
-<p><strong>Everything works fine until I restart emacs</strong>:</p>
-
-<p><code>ox-hugo</code> been marked as <strong>an orphan package</strong> and got removed first then
-reinstalled back immediately.</p>
-
-<p>By searching and digging around the Spacemacs documentation, I found the
-Spacemacs <code>org layer</code> already has <a href="http://develop.spacemacs.org/layers/+emacs/org/README.html#hugo-support">org-hugo support by default</a> (<code>development</code>
-branch only). So we <strong>don&rsquo;t need to follow</strong> the <a href="https://ox-hugo.scripter.co/">ox-hugo</a> usage guide.
-we can do this in <code>.spacemacs</code></p>
+<p>So in <code>.spacemacs</code> we can set this in <code>dotspacemacs-configure-layers</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
@@ -188,13 +175,46 @@ we can do this in <code>.spacemacs</code></p>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq-default</span>
- <span class="nv">dotspacemacs-configuration-layers</span>
- <span class="o">&#39;</span><span class="p">((</span><span class="nv">org</span> <span class="nb">:variables</span>
-        <span class="nv">org-enable-hugo-support</span> <span class="no">t</span><span class="p">)))</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">shell</span> <span class="nb">:variables</span>
+       <span class="nv">shell-default-term-shell</span> <span class="s">&#34;/bin/zsh&#34;</span> <span class="c1">;; find your zsh path using `$ whereis zsh`</span>
+       <span class="nv">shell-default-height</span> <span class="mi">30</span>
+       <span class="nv">shell-default-position</span> <span class="ss">&#39;bottom</span><span class="p">)</span></code></pre></td></tr></table>
 </div>
 </div>
-<p>Orphan package and reinstall issue should be fixed now.</p>
+<p>This change is the basic setup, <strong>but since I enabled <code>vi</code> key bindings in my
+zsh, it starts conflicts with Spacemacs <a href="https://github.com/emacs-evil/evil">evil-mode</a>.</strong> after a play around with different
+settings, I found the best option for me is to disable the evil-mode inside
+<a href="https://www.emacswiki.org/emacs/AnsiTerm">ansi-term</a>.</p>
+
+<p>Add following code in <code>dotspacemacs/user-config</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">evil-set-initial-state</span> <span class="ss">&#39;term-mode</span> <span class="ss">&#39;emacs</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>This change allows us navigation in ansi-term, but we can not editing
+anything in the input line. We need to do <strong>one more change</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nv">evil-set-initial-state</span> <span class="ss">&#39;term-mode</span> <span class="ss">&#39;emacs</span><span class="p">)</span> <span class="c1">;; turn off evil-mode for ansi-term</span>
+<span class="p">(</span><span class="nb">setq</span> <span class="nv">term-char-mode-point-at-process-mark</span> <span class="no">nil</span><span class="p">)</span> <span class="c1">;; allow editing in normal mode</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>After <code>SPC f e R</code>, we can now using zsh inside Spacemacs</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://github.com/syl20bnr/spacemacs/issues/8642">syl20bnr/spacemacs#8642 Cannot edit shell commands in normal mode.</a></li>
+<li><a href="https://github.com/syl20bnr/spacemacs/tree/develop/layers/+tools/shell">spacemacs/layers/+tools/shell at develop · syl20bnr/spacemacs · GitHub</a></li>
+</ul>
     </div>
 
     <div class="post-copyright">
@@ -205,8 +225,8 @@ we can do this in <code>.spacemacs</code></p>
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2019-10-23
-        <a href="https://github.com/rcgary/chaoruan.org/commit/c4a61527d136b3c2eee854524392619088fb6f39" title="[POST] Start using hugo more feature">(c4a6152)</a>
+        2019-10-26
+        
     </span>
   </p>
   
@@ -218,15 +238,15 @@ we can do this in <code>.spacemacs</code></p>
 <footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/emacs/">emacs</a>
-          <a href="/tags/org/">org</a>
+          <a href="/tags/zsh/">zsh</a>
           </div>
       <nav class="post-nav">
-        
-        <a class="next" href="/post/running-oh-my-zsh-inside-spacemacs/">
-            <span class="next-text nav-default">Running Oh-My-Zsh inside Spacemacs</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
+        <a class="prev" href="/post/ox-hugo-install-issue-with-spacemacs/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">ox-hugo Install Issue with Spacemacs</span>
+            <span class="prev-text nav-mobile">Prev</span>
           </a>
+        
       </nav>
     </footer>
   </article>

@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Chaos Blog - Where I put my thoughts together</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Oct 2019 18:42:00 +1100</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 10:58:00 +1100</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>emacs</title>
       <link>http://localhost:1313/tags/emacs/</link>
-      <pubDate>Wed, 23 Oct 2019 18:42:00 +1100</pubDate>
+      <pubDate>Sat, 26 Oct 2019 10:58:00 +1100</pubDate>
       
       <guid>http://localhost:1313/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>http://localhost:1313/tags/zsh/</link>
+      <pubDate>Sat, 26 Oct 2019 10:58:00 +1100</pubDate>
+      
+      <guid>http://localhost:1313/tags/zsh/</guid>
       <description></description>
     </item>
     
