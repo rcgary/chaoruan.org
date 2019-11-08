@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swift on Chaos Blog - Where I put my thoughts together</title>
+    <link>http://localhost:1313/tags/swift/</link>
+    <description>Recent content in swift on Chaos Blog - Where I put my thoughts together</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 08 Nov 2019 22:54:00 +1100</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading Notes for SwiftUI and Combine Programming (1)</title>
+      <link>http://localhost:1313/post/reading-notes-for-swiftui-and-combine-programming/</link>
+      <pubDate>Fri, 08 Nov 2019 22:54:00 +1100</pubDate>
+      
+      <guid>http://localhost:1313/post/reading-notes-for-swiftui-and-combine-programming/</guid>
+      <description>I start reading onevcat new book SwiftUI and Combine Programming (a great book to learning SwiftUI if you can read Chinese). I decided to put all the interest parts and notes in here.
+First things First We always need to import the dependency first
+1 2  import SwiftUI import Combine   Layout all the views in the body 1 2 3  var body: some View { /// Layout your view here }   some View is a new concept introduced in Swift 5.</description>
+    </item>
+    
+  </channel>
+</rss>
