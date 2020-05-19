@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.58.3 with theme even" />
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
 
 
 <link rel="canonical" href="http://localhost:1313/post/ox-hugo-install-issue-with-spacemacs/" />
@@ -47,16 +47,13 @@
 <meta property="article:modified_time" content="2019-10-26T15:09:16+11:00" />
 <meta itemprop="name" content="ox-hugo Install Issue with Spacemacs">
 <meta itemprop="description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:">
-
-
 <meta itemprop="datePublished" content="2019-10-23T18:42:00&#43;11:00" />
 <meta itemprop="dateModified" content="2019-10-26T15:09:16&#43;11:00" />
 <meta itemprop="wordCount" content="140">
 
 
 
-<meta itemprop="keywords" content="emacs,org," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="emacs,org," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ox-hugo Install Issue with Spacemacs"/>
 <meta name="twitter:description" content="While I try to install ox-hugo on my Spacemacs, I found an issue:"/>
 
@@ -141,17 +138,21 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>[NOTE] Updated <span class="timeago" datetime="2019-10-26T15:09:16" title="October 26, 2019">October 26, 2019</span>. This article may have outdated content or subject matter.</p>
+    </div>
+  </div>
     <div class="post-content">
       <p>While I try to install <a href="https://ox-hugo.scripter.co/">ox-hugo</a> on my <a href="http://spacemacs.org/">Spacemacs</a>, I found an issue:</p>
-
 <p>After reading the install and <a href="https://ox-hugo.scripter.co/#usage">usage guide</a>. I added <code>ox-hugo</code>
 to <code>dotspacemacs-additional-packages</code> and also did this:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -168,21 +169,19 @@ to <code>dotspacemacs-additional-packages</code> and also did this:</p>
   <span class="c1">;; ox-hugo config</span>
   <span class="p">(</span><span class="nb">use-package</span> <span class="nv">ox-hugo</span>
     <span class="nb">:ensure</span> <span class="no">t</span>          <span class="c1">;Auto-install the package from Melpa (optional)</span>
-    <span class="nb">:after</span> <span class="nv">ox</span><span class="p">))</span></code></pre></td></tr></table>
+    <span class="nb">:after</span> <span class="nv">ox</span><span class="p">))</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>Everything works fine until I restart emacs</strong>:</p>
-
+</div><p><strong>Everything works fine until I restart emacs</strong>:</p>
 <p><code>ox-hugo</code> been marked as <strong>an orphan package</strong> and got removed first then
 reinstalled back immediately.</p>
-
 <p>By searching and digging around the Spacemacs documentation, I found the
 Spacemacs <code>org layer</code> already has <a href="http://develop.spacemacs.org/layers/+emacs/org/README.html#hugo-support">org-hugo support by default</a> (<code>development</code>
 branch only). So we <strong>don&rsquo;t need to follow</strong> the <a href="https://ox-hugo.scripter.co/">ox-hugo</a> usage guide.
 we can do this in <code>.spacemacs</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -191,10 +190,10 @@ we can do this in <code>.spacemacs</code></p>
 <pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span class="p">(</span><span class="nb">setq-default</span>
  <span class="nv">dotspacemacs-configuration-layers</span>
  <span class="o">&#39;</span><span class="p">((</span><span class="nv">org</span> <span class="nb">:variables</span>
-        <span class="nv">org-enable-hugo-support</span> <span class="no">t</span><span class="p">)))</span></code></pre></td></tr></table>
+        <span class="nv">org-enable-hugo-support</span> <span class="no">t</span><span class="p">)))</span>
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>Orphan package and reinstall issue should be fixed now.</p>
+</div><p>Orphan package and reinstall issue should be fixed now.</p>
     </div>
 
     <div class="post-copyright">
@@ -276,7 +275,8 @@ we can do this in <code>.spacemacs</code></p>
 
   <span class="copyright-year">
     &copy; 
-    2019
+    2019 - 
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
